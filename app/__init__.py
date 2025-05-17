@@ -7,7 +7,7 @@ def create_app():
 
     app = Flask(__name__, template_folder=template_dir)
 
-    from app.rutas import bp as main_bp
+    from app.routes import bp as main_bp
     app.register_blueprint(main_bp)
 
     return app
