@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: optimizador-portafolios
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn run:app
